@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.MuiSlider-root.MuiSlider-colorPrimary.MuiSlider-sizeMedium.css-exkjcx {
+  color: #f3b064;
+}
+
+.MuiSlider-track.css-1gv0vcd-MuiSlider-track {
+  color: #f3b064;
+}
+
+.MuiSlider-thumb.MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.css-eg0mwd-MuiSlider-thumb {
+  color: #fff;
+}
+
+.MuiSlider-track.css-1gv0vcd-MuiSlider-track {
+  height: 10px;
+}
+
+.MuiSlider-rail.css-14pt78w-MuiSlider-rail {
+  height: 10px;
+}
+
+.css-z5e0z9-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 0.8rem;
+}
+
+.css-nz481w-MuiInputBase-input-MuiInput-input {
+  font-size: 0.9rem;
+}
+
+.MuiSlider-rail {
+  color: #4e5054;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded.MuiAccordion-gutters.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  border-width: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.volume-noise--traffic .MuiSlider-thumb {
+  background-image: url("../public/noise/citytrafficactive.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.volume-noise--rain .MuiSlider-thumb {
+  background-image: url("../public/noise/raincity.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.volume-noise--keyboard .MuiSlider-thumb {
+  background-image: url("../public/noise/keyboard.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.volumn-sound--alarm .MuiSlider-rail,
+.MuiSlider-track {
+  height: 5px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@layer components {
+  .overlay {
+    @apply bg-black absolute z-10 top-0 left-0 right-0 bottom-0 bg-opacity-40;
+  }
+}
+
+.ribbon {
+  position: relative;
+  border-radius: 6px;
+  background-color: wheat;
+  font-weight: 500;
+}
+
+.ribbon::before {
+  content: "";
+  background-color: transparent;
+  border: 10px solid wheat;
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
